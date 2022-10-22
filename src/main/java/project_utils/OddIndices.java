@@ -1,6 +1,6 @@
 package project_utils;
 
-//public class OddIndices {
+public class OddIndices {
 
 
     /**Написать алгоритм OddIndices, который принимает массив целых чисел,  и возвращает массив значений нечетных индексов
@@ -9,41 +9,58 @@ package project_utils;
      Expected Result =  {590, 985, 68}
      */
 //
-//    public int[] OddIndices (int[] array) {
-//
-//        int odd = 0;
-//        int [] arrayOdd;
-//        for (int i = 0; i <= array.length; i ++){
-//            if (i % 2 == 0){
-//
-//                arrayOdd[odd] = array[i];
-//
-//
-//        }
-//
-//    }
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
+    public int[] oddIndices (int[] array) {
+
+//        int[]  arrayOdd;
+        int odd = 0;
+
+        for (int i = 0; i <= array.length; i ++){
+            if (i % 2 != 0){ /**задаем длинну массива*/
+
+                odd ++;
+            }
+        }
+
+        int[] arrayOdd = new int[odd];
+        int oddInt = 0;
+
+        for (int i = 0; i <= array.length && oddInt <= odd; i ++) {
+
+            if (i % 2 == 0) {
+
+                continue;
+
+            } else {
+
+                arrayOdd[oddInt] = array[i];/**заполняем массив*/
+            }
+            oddInt ++;
+        }
+
+        return arrayOdd;
+    }
 //
 //
 //
 //
 //
-//}
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+}

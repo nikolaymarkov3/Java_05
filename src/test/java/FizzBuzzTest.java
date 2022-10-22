@@ -31,7 +31,7 @@ public class FizzBuzzTest {
 
         //Assert
 
-        Assert.assertEquals(actualResult,expectedResult);
+        Assert.assertEquals(expectedResult,actualResult);
 
     }
 
