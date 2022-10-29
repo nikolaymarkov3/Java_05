@@ -12,25 +12,19 @@ public class RemoveAllZeros {
 
     public String removeAllZeros(String text){
 
-        String b = text.trim();
+        String str = text.trim().replace("0", "");
 
-        int indexM = text.indexOf("0");/**Если в строке не было нулей*/
-
-//        text.indexOf("0");
-//        String a = null;
-
-        if (!text.isEmpty() && text.equals(b.replace("0", ""))) {/**indexM == -1 = Если в строке неn нулей*/
+        if (!text.isEmpty() && text.equals(str)) {/**Если в строке нет нулей*/
 
             return "This is a valid string";
-
-//            return b.replace("0", "");
-
-
         }
 
-        return b.replace("0", "");
-
+        return str;
     }
+
+//    int indexM = text.indexOf("0");/**Если в строке не было нулей*/
+
+//        text.indexOf("0");
 //        if (!text.isEmpty() && indexM == -1){/**indexM == -1 = Если в строке неn нулей*/
 //
 //

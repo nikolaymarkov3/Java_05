@@ -10,13 +10,10 @@ public class RemoveAllAs {
      “taramasalata” → “trmslt”*/
 
     public String removeAllAs(String text) {
-//        String b = null;
-//        String a = null;
         if (!text.isEmpty()){
-            String b = text.trim();
-            String a = b.replace("a", "");
+            String b = text.trim().replace("a","");
 
-            return a;
+            return b;
         }
 
         return "Пустая строка";

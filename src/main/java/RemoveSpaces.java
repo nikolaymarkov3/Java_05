@@ -16,11 +16,8 @@ public class RemoveSpaces {
 
 
     public String removeSpaces(String text){
-
         if (!text.isEmpty()) { /** если строка пустая - true, если нет false*/
-
         if (text.length() > 16){/**проверка на лишние пробелы в начале и в конце*/
-
             String a = text.trim();
 
             return "Лишние пробелы удалены";
